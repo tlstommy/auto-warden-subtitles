@@ -2,22 +2,20 @@
 	"schemaVersion": 1,
 	"id": "auto-warden-subtitles",
 	"version": "${version}",
-	"name": "auto-warden-subtitl.es",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Auto-Warden-Subtitles",
+	"description": "This mod automatically turns on subtitles when entering the Deep Dark, making it easier to detect any nearby Wardens.",
 	"authors": [
-		"Me!"
+		"Lulamae1"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/tlstommy/auto-warden-subtitles"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/auto-warden-subtitles/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"tls.autowardensubtitles.ExampleMod"
-		],
+
 		"client": [
           "tls.autowardensubtitles.AutoWardenSubtitles"
 		]
@@ -31,7 +29,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": "1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
