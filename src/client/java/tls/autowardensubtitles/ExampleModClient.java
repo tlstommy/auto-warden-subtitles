@@ -20,7 +20,6 @@ public class ExampleModClient implements ClientModInitializer {
 				Biome biome = client.world.getBiome(client.player.getBlockPos()).value();
 				LOGGER.info(client.world.getBiome(client.player.getBlockPos()));
 
-
 			}
 		});
 	}
