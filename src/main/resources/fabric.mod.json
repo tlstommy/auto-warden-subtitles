@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "auto-warden-subtitles",
 	"version": "${version}",
-	"name": "Auto-Warden-Subtitles",
+	"name": "Auto Warden Subtitles",
 	"description": "This mod automatically turns on subtitles when entering the Deep Dark, making it easier to detect any nearby Wardens.",
 	"authors": [
 		"Lulamae1"
