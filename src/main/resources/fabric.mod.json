@@ -19,7 +19,7 @@
 			"tls.autowardensubtitles.ExampleMod"
 		],
 		"client": [
-			"tls.autowardensubtitles.ExampleModClient"
+          "tls.autowardensubtitles.AutoWardenSubtitles"
 		]
 	},
 	"mixins": [

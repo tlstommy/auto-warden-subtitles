@@ -12,10 +12,12 @@ import net.minecraft.client.option.GameOptions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ExampleModClient implements ClientModInitializer {
+public class AutoWardenSubtitles implements ClientModInitializer {
 
+	//logger for debug
 	private static final Logger LOGGER = LogManager.getLogger();
 
+	//track if subs are on
 	private boolean subtitlesEnabled = false;
 
 	@Override
@@ -27,21 +29,28 @@ public class ExampleModClient implements ClientModInitializer {
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			if (client.player != null && client.world != null) {
+
+				//get biome based off player block and then compare to the target biome
 				Biome biome = client.world.getBiome(client.player.getBlockPos()).value();
 				Boolean inTargetBiome = client.world.getBiome(client.player.getBlockPos()).matchesKey(targetBiome);
 
 				if(inTargetBiome && !subtitlesEnabled) {
-					LOGGER.info("Turn subtitles on");
 					subtitlesEnabled = true;
-					client.player.sendMessage(Text.literal("Now entering The Deep Dark, turning on subtitles"));
+					//LOGGER.info("Turn subtitles on");
+
+					//its kind of cluttered having this message every time, im not sure i want it
+					//client.player.sendMessage(Text.literal("Now entering The Deep Dark, turning on subtitles"));
 					turnOnSubtitles();
 
 				}
 
 				if(!inTargetBiome && subtitlesEnabled) {
-					LOGGER.info("Turn subtitles off");
-					client.player.sendMessage(Text.literal("Leaving The Deep Dark, turning off subtitles"));
 					subtitlesEnabled = false;
+					//LOGGER.info("Turn subtitles off");
+
+
+					//its kind of cluttered having this message every time, im not sure i want it
+					//client.player.sendMessage(Text.literal("Leaving The Deep Dark, turning off subtitles"));
 					turnOffSubtitles();
 				}
 			}
