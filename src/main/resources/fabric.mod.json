@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "auto-warden-subtitles",
 	"version": "${version}",
-	"name": "Auto Warden Subtitles",
+	"name": "Auto-Warden-Subtitles",
 	"description": "This mod automatically turns on subtitles when entering the Deep Dark, making it easier to detect any nearby Wardens.",
 	"authors": [
-		"Thomas Smith"
+		"Lulamae1"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -29,7 +29,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": ">=1.20",
+		"minecraft": "1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
