@@ -22,6 +22,10 @@ Below is a table of each warning level and the subtitle text that is produced.
 | **Warning Level 3** | "Warden draws close. " |
 | **Warning Level 4** | "Warden groans angrily. " |
 
+## Dependencies
+
+This mod requires the [Fabric API](https://modrinth.com/mod/fabric-api) mod.
+
 ## Installation
 
 1. Download the .jar file from the [Github Releases](https://github.com/tlstommy/auto-warden-subtitles/releases) section.
