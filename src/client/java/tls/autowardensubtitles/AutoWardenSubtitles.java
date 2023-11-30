@@ -15,10 +15,8 @@ import org.apache.logging.log4j.Logger;
 
 public class AutoWardenSubtitles implements ClientModInitializer {
 
-	//logger for debug
 	private static final Logger LOGGER = LogManager.getLogger();
 
-	//track if subs are on
 	private boolean subtitlesEnabled = false;
 
 	@Override
@@ -38,20 +36,12 @@ public class AutoWardenSubtitles implements ClientModInitializer {
 				if(inTargetBiome && !subtitlesEnabled) {
 					subtitlesEnabled = true;
 					//LOGGER.info("Turn subtitles on");
-
-					//its kind of cluttered having this message every time, im not sure i want it
-					//client.player.sendMessage(Text.literal("Now entering The Deep Dark, turning on subtitles"));
 					turnOnSubtitles();
 
 				}
 
 				if(!inTargetBiome && subtitlesEnabled) {
 					subtitlesEnabled = false;
-					//LOGGER.info("Turn subtitles off");
-
-
-					//its kind of cluttered having this message every time, im not sure i want it
-					//client.player.sendMessage(Text.literal("Leaving The Deep Dark, turning off subtitles"));
 					turnOffSubtitles();
 				}
 			}
