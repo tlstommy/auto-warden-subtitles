@@ -43,7 +43,13 @@ processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand "version": project.version,
+				"supported_fabric_versions":project.supported_fabric_versions,
+				"supported_minecraft_versions":project.supported_minecraft_versions,
+				"supported_java_versions":project.supported_java_versions
+
+
+
 	}
 }
 
