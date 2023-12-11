@@ -27,7 +27,7 @@ Below is a table of each warning level and the subtitle text that is produced.
 ## Installation
 
 ### Fabric Version
-**This mod requires the [Fabric API](https://github.com/FabricMC/fabric) mod.**
+**The Fabric version of this mod requires the [Fabric API](https://github.com/FabricMC/fabric) mod.**
 
 1. Download the .jar file from the [versions](https://modrinth.com/mod/auto-warden-subtitles/versions) section on Modrinth or from the [Github releases channel](https://github.com/tlstommy/auto-warden-subtitles/releases).
 2. Place the downloaded .jar file into the "mods" folder of your Fabric installation.
