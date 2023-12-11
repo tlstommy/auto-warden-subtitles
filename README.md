@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/tlstommy/auto-warden-subtitles)
 #### [Modrinth Page](https://modrinth.com/mod/auto-warden-subtitles)
 
-Auto Warden Subtitles is a simple Fabric Minecraft mod that automatically enables subtitles when entering the Deep Dark biome and disables them upon leaving the biome. This makes it easier to detect nearby Wardens or monitor the current "warning level" of triggered Sculk Shriekers.
+Auto Warden Subtitles is a Minecraft mod that automatically enables subtitles when entering the Deep Dark biome and disables them upon leaving the biome. This makes it easier to detect nearby Wardens or monitor the current "warning level" of triggered Sculk Shriekers.
 
 ### Sculk Shrieker Warning Levels
 
@@ -26,11 +26,17 @@ Below is a table of each warning level and the subtitle text that is produced.
 
 ## Installation
 
+### Fabric Version
 **This mod requires the [Fabric API](https://github.com/FabricMC/fabric) mod.**
-
 
 1. Download the .jar file from the [versions](https://modrinth.com/mod/auto-warden-subtitles/versions) section on Modrinth or from the [Github releases channel](https://github.com/tlstommy/auto-warden-subtitles/releases).
 2. Place the downloaded .jar file into the "mods" folder of your Fabric installation.
+
+
+### Forge Version
+
+1. Download the .jar file from the [versions](https://modrinth.com/mod/auto-warden-subtitles/versions) section on Modrinth or from the [Github releases channel](https://github.com/tlstommy/auto-warden-subtitles/releases).
+2. Place the downloaded .jar file into the "mods" folder of your Forge installation.
 
 ## Issues & Suggestions
 If you encounter any issues or have any suggestions for improving the mod, please submit them through the [Github Issues](https://github.com/tlstommy/auto-warden-subtitles/issues) page. Your feedback is greatly appreciated!

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "${archives_base_name}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_authors}"
+  ],
+  "contact": {
+    "homepage": "${homepage_url}",
+    "sources": "${src_url}"
+  },
+  "license": "${mod_license}",
+  "icon": "assets/autowardensubtitles/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "tls.autowardensubtitles.fabric.AutoWardenSubtitlesFabric"
+    ]
+  },
+
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
