@@ -1,6 +1,6 @@
 # Auto Warden Subtitles
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/auto-warden-subtitles?logo=Modrinth)](https://modrinth.com/mod/auto-warden-subtitles)
-[![Curseforge Downloads](http://cf.way2muchnoise.eu/short_949010_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/auto-warden-subtitles)
+[![Curseforge Downloads](http://cf.way2muchnoise.eu/full_949010_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/auto-warden-subtitles)
 ![Modrinth Game Versions](https://img.shields.io/modrinth/game-versions/auto-warden-subtitles)
 ![Modrinth Version](https://img.shields.io/modrinth/v/auto-warden-subtitles)
 ![](https://img.shields.io/badge/api-fabric-orange.svg)
