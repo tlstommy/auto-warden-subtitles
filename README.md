@@ -4,7 +4,6 @@
 ![Modrinth Game Versions](https://img.shields.io/modrinth/game-versions/auto-warden-subtitles)
 ![Modrinth Version](https://img.shields.io/modrinth/v/auto-warden-subtitles)
 ![](https://img.shields.io/badge/api-fabric-orange.svg)
-![Downloads](https://img.shields.io/modrinth/dt/auto-warden-subtitles)
 ![GitHub](https://img.shields.io/github/license/tlstommy/auto-warden-subtitles)
 #### [Modrinth Page](https://modrinth.com/mod/auto-warden-subtitles)
 #### [Cursefore Page](https://www.curseforge.com/minecraft/mc-mods/auto-warden-subtitles)
