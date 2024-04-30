@@ -6,25 +6,23 @@ architectury {
     platformSetupLoomIde()
     neoForge()
 }
+
 repositories {
     maven { url = "https://maven.neoforged.net/releases/" }
 }
 
+loom {
+    accessWidenerPath = project(":common").loom.accessWidenerPath
 
-//fix for 1.20.4 bug mod.toml info not working
-sourceSets.each {
-    def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
-    it.output.resourcesDir = dir
-    it.java.destinationDirectory = dir
+
 }
-
 
 configurations {
     common
     shadowCommon // Don't use shadow from the shadow plugin since it *excludes* files.
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
-    developmentForge.extendsFrom common
+    developmentNeoForge.extendsFrom common
 }
 
 dependencies {
@@ -41,6 +39,7 @@ processResources {
     var replaceProperties = [
             minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
             forge_version: forge_version, forge_version_range: forge_version_range,
+            neoforge_version: neoforge_version,neoforge_version_range: neoforge_version_range,
             loader_version_range: loader_version_range,
             mod_id: archives_base_name, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_authors: mod_authors, mod_description: mod_description,src_url: src_url,
@@ -48,7 +47,7 @@ processResources {
 
     inputs.properties replaceProperties
 
-    filesMatching("META-INF/mods.toml") {
+    filesMatching("META-INF/neoforge.mods.toml") {
         expand replaceProperties + [project: project]
     }
 }
@@ -64,6 +63,7 @@ shadowJar {
 remapJar {
     input.set shadowJar.archiveFile
     dependsOn shadowJar
+    archiveClassifier = null
 }
 
 sourcesJar {
