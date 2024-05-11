@@ -1,8 +1,5 @@
 package tls.autowardensubtitles.neoforge;
 
-
-//import dev.architectury.event.EventHandler;
-import net.neoforged.neoforge.common.NeoForge;
 import tls.autowardensubtitles.AutoWardenSubtitles;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLEnvironment;
@@ -22,14 +19,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 
 
 
-
-import com.mojang.logging.LogUtils;
-import org.slf4j.Logger;
+//import com.mojang.logging.LogUtils;
+//import org.slf4j.Logger;
 
 
 @Mod(AutoWardenSubtitles.MOD_ID)
 public class AutoWardenSubtitlesNeoForge {
-    private static final Logger LOGGER = LogUtils.getLogger();
+    //private static final Logger LOGGER = LogUtils.getLogger();
 
     public AutoWardenSubtitlesNeoForge() {
 
@@ -37,7 +33,7 @@ public class AutoWardenSubtitlesNeoForge {
         AutoWardenSubtitles.init();
 
     }
-    //@Mod.EventBusSubscriber(modid = AutoWardenSubtitles.MOD_ID, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = AutoWardenSubtitles.MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
 
         private static boolean subtitlesEnabled = false;
