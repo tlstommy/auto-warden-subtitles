@@ -15,13 +15,13 @@ import net.minecraft.client.Options;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.neoforge.event.TickEvent;
+
+import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
 
 
-import net.neoforged.bus.api.IEventBus;
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
@@ -31,7 +31,7 @@ import org.slf4j.Logger;
 public class AutoWardenSubtitlesNeoForge {
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public AutoWardenSubtitlesNeoForge(IEventBus modBus) {
+    public AutoWardenSubtitlesNeoForge() {
 
 
         AutoWardenSubtitles.init();
@@ -42,7 +42,7 @@ public class AutoWardenSubtitlesNeoForge {
 
         private static boolean subtitlesEnabled = false;
         @SubscribeEvent
-        public static void onClientTick(TickEvent.ClientTickEvent event) {
+        public static void onClientTick(ClientTickEvent.Pre event) {
             //mc instance
             Minecraft mc = Minecraft.getInstance();
 
