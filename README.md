@@ -34,6 +34,10 @@ Below is a table of each warning level and the subtitle text that is produced.
 1. Download the appropriate .jar file from the versions section on [Modrinth](https://modrinth.com/mod/auto-warden-subtitles/versions), [Curseforge](https://www.curseforge.com/minecraft/mc-mods/auto-warden-subtitles/files), or from the [Github releases channel](https://github.com/tlstommy/auto-warden-subtitles/releases).
 2. Place the downloaded .jar file into the "mods" folder of your Fabric installation.
 
+### NeoForge Version
+
+1. Download the appropriate .jar file from the versions section on [Modrinth](https://modrinth.com/mod/auto-warden-subtitles/versions), [Curseforge](https://www.curseforge.com/minecraft/mc-mods/auto-warden-subtitles/files), or from the [Github releases channel](https://github.com/tlstommy/auto-warden-subtitles/releases).
+2. Place the downloaded .jar file into the "mods" folder of your NeoForge installation.
 
 ### Forge Version
 
