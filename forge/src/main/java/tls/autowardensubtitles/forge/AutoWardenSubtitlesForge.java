@@ -1,6 +1,6 @@
 package tls.autowardensubtitles.forge;
 
-import dev.architectury.platform.forge.EventBuses;
+
 import tls.autowardensubtitles.AutoWardenSubtitles;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,6 +16,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
@@ -26,7 +28,7 @@ public class AutoWardenSubtitlesForge {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public AutoWardenSubtitlesForge() {
-        EventBuses.registerModEventBus(AutoWardenSubtitles.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        //EventBuses.registerModEventBus(AutoWardenSubtitles.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
         AutoWardenSubtitles.init();
 
     }
