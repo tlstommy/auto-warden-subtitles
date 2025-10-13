@@ -26,7 +26,8 @@ public class AutoWardenSubtitlesFabric implements ModInitializer {
                 Options gameOptions = Minecraft.getInstance().options;
 
                 //get biome based off player block and then compare to the target biome
-                Boolean inTargetBiome = client.player.clientLevel.getBiome(BlockPos.containing(client.player.position())).is(targetBiome);
+                //Boolean inTargetBiome = client.player.clientLevel.getBiome(BlockPos.containing(client.player.position())).is(targetBiome);
+                Boolean inTargetBiome = client.level.getBiome(BlockPos.containing(client.player.position())).is(targetBiome);
 
                 if(inTargetBiome && !subtitlesEnabled) {
                     subtitlesEnabled = true;
